@@ -1,0 +1,22 @@
+.button{
+    background: rgba($color: #000, $alpha: 0);
+    color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    list-style-type: none;
+    border: 2px solid #ffffff;
+    font-size: 18px;
+    &_main{
+        margin: 0 auto;
+        display: block;
+        font-size: 19px;
+        transition: all 0.3s;
+        &:hover{
+            -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            transform: scale(1.05);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+    }
+}

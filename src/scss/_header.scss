@@ -1,0 +1,57 @@
+.header{
+    min-height: 825px;
+    background: url(@img/bg.png) center (center/cover) no-repeat;
+    position: relative;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #303133;
+        padding: 0 30px;
+        height: 55px;
+    }
+    &__logo{
+        font-size: 20px;
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 500;
+    }
+    &__links{
+        padding: 28px 0;
+        display: flex;
+        list-style-type: none;
+        li{
+            margin: 0 15px;
+            a{
+                text-decoration: none;
+                color: #ffffff;
+                position: relative;
+                text-align: center;
+                line-height: 40px;
+                transition: all 0.3s;
+                &:hover{
+                    opacity: 0.5;
+                }
+
+                
+            }
+        }
+    }
+    &__content{
+        margin-top: 100px;
+        h2{
+            margin-top: 10px;
+        }
+        button{
+            margin-top: 30px;
+        }
+    }
+    &__img{
+        position: absolute;
+        height: 400px;
+        right: 50%;
+        transform: translateX(50%);
+        display: block;
+        margin-top: 25px;
+    }
+}
