@@ -7,16 +7,27 @@
     list-style-type: none;
     border: 2px solid #ffffff;
     font-size: 18px;
+    &:hover{
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
     &_main{
         margin: 0 auto;
         display: block;
         font-size: 19px;
         transition: all 0.3s;
-        &:hover{
-            -webkit-transform: scale(1.05);
-            -ms-transform: scale(1.05);
-            transform: scale(1.05);
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        }
+        margin-top: 20px;
     }
+    &_info{
+        border: 2px solid #616366;
+        color: #313234;
+        margin-top: 20px;
+        transition: 0.3s;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    }
+
+
 }

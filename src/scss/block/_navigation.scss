@@ -1,0 +1,57 @@
+.navigation{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    ul{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li{
+            position: relative;
+            list-style: none;
+            a{
+                position: relative;
+                margin: 0 15px;
+                text-decoration: none;
+                color: #fff;
+                letter-spacing: 2px;
+                font-weight: 500;
+                transition: 0.6s;
+            }
+        }
+    }
+    &__logo{
+        position: relative;
+        font-weight: 700;
+        color: #fff;
+        text-decoration: none;
+        font-size: 2em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.6s;
+        &_sticky{
+          
+            color: #000;
+        }
+    }
+    &_sticky{
+        padding: 20px 100px;
+        background: #fff;
+        ul{
+            li{
+                a{
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+

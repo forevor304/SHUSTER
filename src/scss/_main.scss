@@ -1,0 +1,9 @@
+.main{
+    min-height: 825px;
+    background: url(@img/background.png) center (center/cover) no-repeat;
+    &__wrapper{
+       margin: 0 auto;  
+       margin-top: 300px;  
+
+    }
+}

@@ -10,7 +10,12 @@
 
 @import"block/button";
 @import"block/text";
+@import"block/navigation";
+@import"block/container";
 
 
 
-@import "header.scss"
+
+@import "header.scss";
+@import"main.scss";
+@import "information.scss"
