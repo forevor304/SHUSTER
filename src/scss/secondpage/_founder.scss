@@ -1,0 +1,31 @@
+.founder{
+    padding: 150px 15px;
+    &__block{
+        margin-right: 120px;
+        padding: 0px 20px;
+        width: 100%;
+        display: flex;
+        background-color: #ebebf0;
+        
+    }
+    &__item{
+        padding: 20px 20px;
+        padding-right: 100px;
+        &_image{
+            padding: 70px 0px;
+            justify-content: left;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    &__descr{
+        
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    &__main{
+        font-size: 20px;
+    }
+}

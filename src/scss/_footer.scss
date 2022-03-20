@@ -1,0 +1,104 @@
+.footer{
+    background-color:#26272b;
+    padding:45px 20px;
+    font-size:15px;
+    line-height:24px;
+    color:#737373;
+    &__hr{
+        padding: 0px 80px;
+    } 
+    hr{
+        border-top-color:#bbb;
+        opacity:0.5 
+    }
+    a{
+        color:#737373;
+        &:hover{
+            color:#3366cc;
+            text-decoration:none; 
+        }
+    }
+    &__block{
+        display: flex;
+        width: 100%;
+        &_social{
+            justify-content: end;
+
+        }
+    }
+    &__item{
+        margin-bottom: 50px;
+        &_text{
+            display: flex;
+            width: 500px;
+            flex-direction: column;
+        }
+        &_social{
+            display: flex;
+           margin: 20px;
+        }
+        &_links{
+            margin: 0px 80px;
+        }
+        &_copyright{
+            margin-top: 40px;
+            display: flex;
+            a{
+                text-decoration: none;
+                margin-left: 3px;
+            }
+        }
+    }
+   &__links{
+        padding-left:0;
+        list-style: none;
+        li{
+            display:block;
+            a{
+                color:#737373;
+                text-decoration: none;
+                :active,:focus,:hover{
+                    color:#3366cc;
+                    text-decoration:none; 
+                }  
+            }
+              
+        }
+   } 
+   &__social{
+        text-align:right;
+        list-style: none;
+        display: flex;
+        align-items: left;
+        li{
+            display: flex;
+            margin: 0px 5px;
+        }
+        a{
+            justify-content: left;
+            align-items: left;
+            width:40px;
+            height:40px;
+            line-height:40px;
+            margin-left:6px;
+            margin-right:0;
+            border-radius:100%;
+            background-color:#33353d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+            img{
+                width: 9px;
+                background-color: #4c4c4c;
+            }
+            &:hover{
+                background-color: blue;
+            }
+        }
+   }
+   &__copyright{
+        margin:0; 
+   }
+
+}

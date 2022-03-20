@@ -19,6 +19,25 @@
         text-align: left;
         margin-bottom: 28px;
     }
+    &_footer{
+        text-align: left;
+        color:#fff;
+        font-size:16px;
+        text-transform:uppercase;
+        margin-top:5px;
+        letter-spacing:2px;
+        margin-bottom: 10px;
+         
+    }
+    &_founder{
+        text-align: left;
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 85px;
+        background: -webkit-linear-gradient(#eee, #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 .subtitle{
     font-size: 16px;
