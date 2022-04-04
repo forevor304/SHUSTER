@@ -1,0 +1,76 @@
+.cpu{
+  &__bg{
+	  	background: url("@img/bgcpu.png") no-repeat ;
+		background-position-y: -95px;
+		background-size: 100%;
+		position: absolute;
+		z-index: 0;
+		width: 100%;
+		display: block;
+		padding-top: 500px;
+  }
+  &__text{
+	  padding: 80px 200px;
+	  max-width: 120em;
+	  display: block;
+	  background-color: #fff;
+	  margin-top: 370px;
+	  position: relative;
+  }
+  &__time{
+	  font-size: 16px;
+	  font-weight: 600;
+  }
+  &__title{
+	  font-weight: 700;
+	  margin-top: 50px;
+	  font-size: 40px;
+  }
+  &__subtitle{
+	  font-weight: 300;
+	  font-size: 25px;
+	  margin-top: 40px;
+  }
+  img{
+	  width: 100%;
+  }
+  &__second-text{
+	  padding: 50px 300px;
+	  &_title{
+		  margin-top: 20px;
+		  font-size: 25px;
+		  font-weight: 500;
+		  letter-spacing: 1px;
+	  }
+	  &_descr{
+		  margin-top: 18px;
+		  font-weight: 300;
+		  font-size: 18px;
+		  
+	  }
+	  img{
+		  margin-top: 50px;
+	  }
+  }
+
+  &__table{
+	  display: block;
+	  margin: 0 auto;
+	  width: 100%;
+	  margin-top: 20px;
+	  
+	  tr{
+		
+		
+		td{
+			text-align: center;
+			vertical-align: middle ;
+			font-size: 15px;
+			padding-right: 20px;
+			padding-bottom: 20px;
+			font-weight: 300;
+		}
+	  }
+  }
+  
+}

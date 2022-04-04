@@ -492,3 +492,70 @@ header__wrapper {
   font-size: 23px;
   padding: 0 80px;
 }
+
+.cpu__bg {
+  background: url("../img/bgcpu.png") no-repeat;
+  background-position-y: -95px;
+  background-size: 100%;
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  display: block;
+  padding-top: 500px;
+}
+.cpu__text {
+  padding: 80px 200px;
+  max-width: 120em;
+  display: block;
+  background-color: #fff;
+  margin-top: 370px;
+  position: relative;
+}
+.cpu__time {
+  font-size: 16px;
+  font-weight: 600;
+}
+.cpu__title {
+  font-weight: 700;
+  margin-top: 50px;
+  font-size: 40px;
+}
+.cpu__subtitle {
+  font-weight: 300;
+  font-size: 25px;
+  margin-top: 40px;
+}
+.cpu img {
+  width: 100%;
+}
+.cpu__second-text {
+  padding: 50px 300px;
+}
+.cpu__second-text_title {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.cpu__second-text_descr {
+  margin-top: 18px;
+  font-weight: 300;
+  font-size: 18px;
+}
+.cpu__second-text img {
+  margin-top: 50px;
+}
+.cpu__table {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 20px;
+}
+.cpu__table tr td {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 15px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  font-weight: 300;
+}
