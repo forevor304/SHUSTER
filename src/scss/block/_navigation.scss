@@ -1,5 +1,5 @@
 .navigation{
-    z-index: 1;
+    z-index: 100;
     position: fixed;
     top: 0;
     left: 0;
@@ -54,5 +54,92 @@
             }
         }
     }
+    .popup{
+        position: absolute;
+        top: -1500%;
+        left: 50%;
+        opacity: 0;
+        transform: translate(-50%,50%) scale(1.25);
+        width: 380px;
+        padding: 1.25rem 1.875rem;
+        background: #fff;
+        box-shadow: 2px 2px 5px 5px rgba(0,0,0,.15);
+        border-radius: .625rem; 
+        transition: top 0ms ease-in-out 200ms,
+                    opacity 200ms ease-in-out 200ms,
+                    transform 20ms ease-in-out 0ms;
+        &__active{
+            top: 50%;
+            opacity: 1;
+            transform: translate(-50%,50%) scale(1); 
+            transition: top 0ms ease-in-out 0ms,
+                        opacity 200ms ease-in-out 200ms,
+                        transform 20ms ease-in-out 0ms;
+        }
+        &__close-btn{
+            position: absolute;
+            top: .625rem;
+            right: .625rem;
+            width: 1rem;
+            height: 1rem;
+            background: #888;
+            color: #eee;
+            text-align: center;
+            line-height: .85rem;
+            border-radius: 1rem;
+            cursor: pointer;
+        }
+        &__form{
+            h2{
+             text-align: center;
+             color: #222;
+             margin: .625rem 0 1.25rem;
+             font-size: 1.625rem;  
+            }
+        }
+        &__form-element{
+           margin: 1rem 0;
+           label{
+              font-size: 1rem; 
+              color: rgb(95, 94, 94);
+             
+           } 
+            input[type='text'],
+            input[type='password']{
+                margin-top: .25rem;
+                display: block;
+                width: 100%;
+                padding: .625rem;
+                outline: none;
+                border: 1px solid #aaa;
+                border-radius: .25rem;
+            }
+            input[type='checkbox']{
+                margin-right: .25rem;
+            }
+            button{
+              width: 100%;
+              height: 2.5rem;
+              border: none;
+              outline: none;
+              font-size: 1rem;
+              background: #222; 
+              color: #f5f5f5; 
+              border-radius: .625rem;
+              cursor: pointer;
+            }
+            a{
+              display: block;
+              text-align: right;
+              font-size: .875rem;
+              color: #1a79ca;
+              text-decoration: none;
+              font-weight: 600;  
+            }
+           
+        }
+    }
+        
 }
+
 

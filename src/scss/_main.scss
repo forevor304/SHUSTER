@@ -1,9 +1,22 @@
 .main{
     min-height: 825px;
-    background: url(@img/background.png) center (center/cover) no-repeat;
     &__wrapper{
-       margin: 0 auto;  
-       margin-top: 300px;  
-
+       margin: 0 auto; 
+       .swiper-slide{
+          img{
+              width: 100%;
+          }
+       }
     }
+
 }
+
+// .main{
+//     min-height: 825px;
+//     background: url(@img/background.png) center (center/cover) no-repeat;
+//     &__wrapper{
+//        margin: 0 auto;  
+//        margin-top: 300px;  
+
+//     }
+// }

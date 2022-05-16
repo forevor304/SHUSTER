@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 	<title>Главная</title>
 </head>
 	<body>
@@ -20,22 +21,57 @@
         <a id="nav_logo" class="navigation__logo" href="../index.html">SHUSTER</a>
         <ul>
             <li><a href="">Portfolio</a></li>
-            <li><a href="">Team</a></li>
+            <li><a href="../gallery.html">Team</a></li>
             <li><a href="">Contact</a></li>
+            <li><a id="show-login">Log in</a></li>
         </ul>
+        <div class="popup">
+            <div class="popup__close-btn">&times;</div>
+            <div class="popup__form">
+                <h2>Log in</h2>
+                <div class="popup__form-element">
+                    <label for="email">Email</label>
+                    <input id="email" type="text" placeholder="Enter email">
+                </div>
+                <div class="popup__form-element">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password">
+                </div>
+                <div class="popup__form-element">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remeber-me">Remember me</label>
+                </div>
+                <div class="popup__form-element">
+                    <button>Sing in</button>
+                </div>
+                <div class="popup__form-element">
+                    <a href="#">Forgot password?</a>
+                </div>
+            </div>
+        </div>
    </div>
-
-  
-    
-
-   <!-- <div class="header__content">
-    <h1 class="title">The New H1</h1>
-    <h2 class="subtitle">Small form factor case with big upgrades.</h2>
-    <button class="button button_main">Shop Now</button>
-    <img class="header__img" src="img/computer.png" alt="computer"> -->
 </div>
 </header>
 		<section class="main">
+	<div class="container swiper mySwiper">
+		<div class="main__wrapper swiper-wrapper">
+			<div class="swiper-slide">
+				<img src="img/backgound.png" alt="backgound">
+			</div>
+			<div class="swiper-slide">
+				<img src="img/backgound.png" alt="backgound">
+			</div>
+			
+		</div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-pagination"></div>
+	</div>
+</section>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- <section class="main">
 	<div class="container">
 		<div class="main__wrapper">
 			<h2 class="subtitle">Small form factor case with big upgrades.</h2>
@@ -43,14 +79,17 @@
 			<button onclick="window.location.href='../CreateMap.html'" class="button button_main">Image Map</button>
 		</div>
 	</div>
-</section>
+</section> -->
 		<section class="info">
     <div class="container">
         <div class="info__image">
             <a href="#"><img src="img/frontPc.png" alt="#"></a>
             <h2>Gaming PCs Made Simple</h2>
             <div class="">Choose from curated parts and we’ll build it for you within 3 weeks</div>
-            <button class="button button_info">Start Your Build</button>
+            <form method="get" action="../CreateMap.html">
+                <button type="submit" class="button button_info"> Start Your Build</button>
+            </form>
+           
         </div>
         <div class="info__wrapper">
             <div class="info__block">
@@ -107,6 +146,7 @@
 
     </div>
 </section>
+
 
 		<main>
 		</main>
@@ -175,5 +215,6 @@
     </div>
 </footer>
 		<script src="js/app.min.js"></script>
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 	</body>
 </html>
