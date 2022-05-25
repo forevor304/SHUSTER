@@ -87,38 +87,9 @@ if(galleryImages) {
 				newPrevBtn.setAttribute('id','changeImg');
 				newPrevBtn.style.cssText = "left:" + calcImgToEdge + "px;";
 
+				newNextBtn.addEventListener("click",changeImg)
+				newPrevBtn.addEventListener("click",changeImg)
 				
-
-				newNextBtn.addEventListener("click",function(changeDir){
-					document.querySelector("#current-img").remove();
-
-					
-					let getImgWindow = document.querySelector(".img-window");
-					let newImg = document.createElement("img");
-					getImgWindow.appendChild(newImg);
-
-					let calcNewImg;
-					if (changeDir === 1){
-						calcNewImg = getLatestOpendImg + 1;
-						if(calcNewImg > galleryImages.length){
-							calcNewImg = 1;
-						}
-					}
-					// else if(changeDir === 0){
-					// 	calcNewImg = getLatestOpendImg - 1;
-					// 	if(calcNewImg < 1){
-					// 		calcNewImg = galleryImages.length;
-					// 	}
-					// }					
-
-					newImg.setAttribute("src","img/img" + calcNewImg + ".jpg");
-					newImg.setAttribute("id", "current-img");
-	
-					getLatestOpendImg = calcNewImg;
-					console.log(calcNewImg)
-					console.log(getLatestOpendImg)
-					
-				})
 
 				// newPrevBtn.addEventListener("click",function(changeDir){
 				// 	document.querySelector("#current-img").remove();
@@ -145,6 +116,39 @@ if(galleryImages) {
 			}	
 		}
     });
+}
+
+function changeImg() {
+	document.querySelector("#current-img").remove();
+	
+	
+	let getImgWindow = document.querySelector(".img-window");
+	let newImg = document.createElement("img");
+	getImgWindow.appendChild(newImg);
+
+	console.log(galleryImages)
+	
+	let calcNewImg;
+	if(calcNewImg = getLatestOpendImg) {
+		calcNewImg = getLatestOpendImg + 1;
+		if(calcNewImg > galleryImages.length){
+			calcNewImg = 1;
+		}
+	}
+	else if(calcNewImg = getLatestOpendImg ) {
+		calcNewImg = getLatestOpendImg - 1;
+		if(calcNewImg < 1) {
+			calcNewImg = galleryImages.length;
+		}
+	}					
+	
+	console.log(calcNewImg)
+	
+	newImg.setAttribute("src", "img/img" + calcNewImg + ".jpg");
+	newImg.setAttribute("id", "current-img");
+
+	getLatestOpendImg = calcNewImg;
+	
 }
 
 
