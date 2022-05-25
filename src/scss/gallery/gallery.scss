@@ -35,32 +35,32 @@
 
 .img1{
    grid-area: img1;
-   background-image: url('@img/img1.jpg'); 
+   background-image: url('@img/thumbs/img1.jpg'); 
 }
 .img2{
     grid-area: img2;
-    background-image: url('@img/img2.jpg'); 
+    background-image: url('@img/thumbs/img2.jpg'); 
  }
 .img3{
     height: 38.125rem;
     grid-area: img3;
-    background-image: url('@img/img3.jpg'); 
+    background-image: url('@img/thumbs/img3.jpg'); 
  }
  .img4{
     grid-area: img4;
-    background-image: url('@img/img4.jpg'); 
+    background-image: url('@img/thumbs/img4.jpg'); 
  }
  .img5{
     grid-area: img5;
-    background-image: url('@img/img5.jpg'); 
+    background-image: url('@img/thumbs/img5.jpg'); 
  }
  .img6{
     grid-area: img6;
-    background-image: url('@img/img6.jpg'); 
+    background-image: url('@img/thumbs/img6.jpg'); 
  }
  .img7{
     grid-area: img7;
-    background-image: url('@img/img7.jpg'); 
+    background-image: url('@img/thumbs/img7.jpg'); 
  }
 
 // gallery image titles 
@@ -111,8 +111,8 @@
 
 .img-btn-next{
     display: block;
-    padding: 0.375rem 625rem;
-    border-radius: 125rem;
+    padding: 6px 10px;
+    border-radius: 4px;
     background-color: #111;
     position: fixed;
     top: 48vh;
@@ -128,8 +128,8 @@
 
 .img-btn-prev{
     display: block;
-    padding: 0.375rem 625rem;
-    border-radius: 125rem;
+    padding: 6px 10px;
+    border-radius: 4px;
     background-color: #111;
     position: fixed;
     top: 48vh;
