@@ -1,31 +1,42 @@
 .founder{
-    padding: 150px 15px;
-    &__block{
-        margin-right: 120px;
-        padding: 0px 20px;
-        width: 100%;
-        display: flex;
-        background-color: #ebebf0;
-        
+    padding: 0;
+    margin: 20vh 0 0 0;
+    box-sizing: border-box;
+    background: linear-gradient(to top right,
+    rgba(#26272b, 0) -1000%,
+    rgba(#26272b,1) calc(50% - 1000px),
+    rgba(#26272b,1) 50%,
+    rgba(#26272b,0) calc(50% + -1000px),
+    rgba(#26272b,0) 1000%);
+    h1{
+       color: rgba(38,39,43,1); 
+       font-size: 3rem;
+       font-weight: 700;
+       text-align: center;
+       margin-bottom: 2rem;
     }
-    &__item{
-        padding: 20px 20px;
-        padding-right: 100px;
-        &_image{
-            padding: 70px 0px;
-            justify-content: left;
-            img{
-                width: 100%;
-            }
+    h2{
+     color: rgb(38,39,43);
+     font-size: 2rem;
+     font-weight: 400;
+    
+    }
+    p{
+        padding: 0 15rem;
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        color:#BEBEBE;
+        line-height: 2rem;
+        margin-bottom: 3rem;
+    }
+    &__image{
+        margin-top: 9rem;
+        margin-bottom: 5rem;
+        img{
+            width: 20rem;
         }
-    }
-    &__descr{
         
-        margin-top: 20px;
-        font-size: 20px;
-        font-weight: 400;
-    }
-    &__main{
-        font-size: 20px;
     }
 }
+
+
