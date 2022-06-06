@@ -9,4 +9,40 @@
         text-align: center;
         flex-direction: column;
     }
+    &__case{
+        width: 96%;
+        max-width: 117rem;
+        margin: 0 auto;
+    }
+    &__profile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 3rem auto;
+    }
+    &__img{
+        width: 4rem;
+        height: 4rem;
+        background: url('@img/icon/user.png') no-repeat center center / cover;
+        &_content{
+            width: 100%;
+            height: 35rem;
+            background: url('@img/case/fullT.jpeg') no-repeat center center ;
+        }
+        &_content.two{
+            background: url('@img/case/caseM.jpeg') no-repeat center center;
+        }
+        &_content.three{
+            background: url('@img/case/FullTandMidT.jpeg') no-repeat center center / cover;
+        }
+        &_content.four{
+            background: url('@img/case/MiniT.jpeg') no-repeat center center ;
+        }
+        
+    }
+    &__card{
+        cursor: pointer;
+        transition: all .4 ease;
+    }
+    
 }
