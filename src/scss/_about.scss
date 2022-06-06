@@ -1,14 +1,15 @@
 .about{
     min-height: 400px;
     padding: 30px 80px;
+    margin-bottom: 200px;
     &__wrapper{
         display: flex;
         padding: 64px 0;
     }
     &__image{
-        width: 576px;
+        
         img{
-            width: 576px;
+            width: 20rem;
         }
     }
     &__text{

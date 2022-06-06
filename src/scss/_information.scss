@@ -51,10 +51,20 @@
         height: 265px;
         &_background{
             border-radius: 8px;
-            background: url('@img/itembgcomputer.png');
+            background: url('@img/itembgcomputer.png') no-repeat left / cover;
             background-size: 270px 270px;
             width: 50%;
             margin: 15px 0 0 25px;
+        }
+        &_background.two{
+            
+            background: url('@img/itembg2.png') no-repeat left / cover;
+        }
+        &_background.three{
+            background: url('@img/itembg3.png') no-repeat left / cover;
+        }
+        &_background.four{
+            background: url('@img/itembg4.png') no-repeat left / cover;
         }
     }
     &__descr{
