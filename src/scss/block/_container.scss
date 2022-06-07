@@ -30,6 +30,16 @@
         max-width: 117rem;
         margin: 0 auto;
     }
+    &__power{
+        width: 96%;
+        max-width: 117rem;
+        margin: 0 auto;
+    }
+    &__mother{
+        width: 96%;
+        max-width: 117rem;
+        margin: 0 auto;
+    }
     &__profile{
         display: flex;
         justify-content: space-between;
@@ -87,6 +97,46 @@
             width: 100%;
             height: 35rem;
             background: url('@img/gpu/gpu.jpg') no-repeat center center / cover;
+        }
+    }
+    &__img{
+        width: 4rem;
+        height: 4rem;
+        background: url('@img/icon/user.png') no-repeat center center / cover;
+        &_power{
+            width: 100%;
+            height: 35rem;
+            background: url('@img/power/power.png') no-repeat center center / cover;
+        }
+        &_power.two{
+            width: 100%;
+            height: 35rem;
+            background: url('@img/power/powertwo.png') no-repeat center center / cover;
+        }
+        &_power.three{
+            width: 100%;
+            height: 35rem;
+            background: url('@img/power/powerthree.png') no-repeat center center / cover;
+        }
+    }
+    &__img{
+        width: 4rem;
+        height: 4rem;
+        background: url('@img/icon/user.png') no-repeat center center / cover;
+        &_mother{
+            width: 100%;
+            height: 35rem;
+            background: url('@img/mother/mother.png') no-repeat center center ;
+        }
+        &_mother.two{
+            width: 100%;
+            height: 35rem;
+            background: url('@img/mother/mother2.png') no-repeat center center  ;
+        }
+        &_mother.three{
+            width: 100%;
+            height: 35rem;
+            background: url('@img/mother/mother3.png') no-repeat center center  ;
         }
     }
 

@@ -59,20 +59,20 @@
         top: -1500%;
         left: 50%;
         opacity: 0;
-        transform: translate(-50%,50%) scale(1.25);
+        transform: translate(-50%,50%) scale(1.15);
         width: 380px;
         padding: 1.25rem 1.875rem;
         background: #fff;
         box-shadow: 2px 2px 5px 5px rgba(0,0,0,.15);
         border-radius: .625rem; 
-        transition: top 0ms ease-in-out 200ms,
+        transition: top 1s ease-in-out 200ms,
                     opacity 200ms ease-in-out 200ms,
                     transform 20ms ease-in-out 0ms;
         &__active{
             top: 50%;
             opacity: 1;
             transform: translate(-50%,50%) scale(1); 
-            transition: top 0ms ease-in-out 0ms,
+            transition: top 1s ease-in-out 0s,
                         opacity 200ms ease-in-out 200ms,
                         transform 20ms ease-in-out 0ms;
         }
